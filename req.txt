@@ -1,5 +1,5 @@
 requests
 beautifulsoup4
-sentence-transformers
 transformers
 langchain
+sentence-transformers
