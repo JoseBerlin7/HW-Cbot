@@ -61,19 +61,23 @@ Similarity	TF-IDF + cosine similarity
 NLTK	Tokenization + stopwords
 Local inference	ollama run (optional)
 Mode Controls
-Command	Mode
-/sys_a	Answer only
-/sys_s	Source only
-/sys_as	Answer + Source
-/select_course	Switch to new course
-/end	Exit
+
+    Command	Mode
+    /sys_a	Answer only
+    /sys_s	Source only
+    /sys_as	Answer + Source
+    /select_course	Switch to new course
+    /end	Exit
+
 Folder Structure
-/project
-│── main.py
-│── HW courses/
-│    ├── course1.txt
-│    ├── course2.txt
-│    └── ...
+
+    /project
+    │── QA.py
+    │── Download_courses.py
+    │── HW courses/
+    │    ├── course1.txt
+    │    ├── course2.txt
+    │    └── ...
 
 
 Each course file should contain:
@@ -87,7 +91,7 @@ end of passage
 
 How to Run
 Prerequisites
-pip install transformers langchain nltk scikit-learn torch
+pip install -r req.txt
 
 
 If using Ollama for responses:
